@@ -32,8 +32,12 @@ app.get('/paginaDeCarrinho', (req, res)=> { // quando acessar o locahost:3000/pa
   res.sendFile(__dirname + "/views/paginaDeCarrinho.html") //buscando arquivo paginaDeProduto.html na pasta views
 })
 
-app.get('/paginaDeCheckout', (req, res)=> { // quando acessar o locahost:3000/paginaDeProduto
-  res.sendFile(__dirname + "/views/paginaDeCheckout.html") //buscando arquivo paginaDeProduto.html na pasta views
+app.get('/paginaDeCheckoutEndereco', (req, res)=> { // quando acessar o locahost:3000/paginaDeProduto
+  res.sendFile(__dirname + "/views/paginaDeCheckoutEnderco.html") //buscando arquivo paginaDeProduto.html na pasta views
+})
+
+app.get('/paginaDeCheckoutPagamento', (req, res)=> { // quando acessar o locahost:3000/paginaDeProduto
+  res.sendFile(__dirname + "/views/paginaDeCheckoutPagamento.html") //buscando arquivo paginaDeProduto.html na pasta views
 })
 
 app.get('/paginaDeLogin', (req, res)=> { // quando acessar o locahost:3000/paginaDeProduto
