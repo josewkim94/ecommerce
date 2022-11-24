@@ -32,24 +32,24 @@ app.get('/carrinho', (req, res)=> { // quando acessar o locahost:3000/paginaDePr
   res.sendFile(__dirname + "/views/paginaDeCarrinho.html") //buscando arquivo paginaDeProduto.html na pasta views
 })
 
-app.get('/paginaDeCheckoutEndereco', (req, res)=> { // quando acessar o locahost:3000/paginaDeProduto
-  res.sendFile(__dirname + "/views/paginaDeCheckoutEnderco.html") //buscando arquivo paginaDeProduto.html na pasta views
+app.get('/checkoutendereco', (req, res)=> { // quando acessar o locahost:3000/paginaDeProduto
+  res.sendFile(__dirname + "/views/checkoutEnderco.html") //buscando arquivo paginaDeProduto.html na pasta views
 })
 
-app.get('/paginaDeCheckoutPagamento', (req, res)=> { // quando acessar o locahost:3000/paginaDeProduto
-  res.sendFile(__dirname + "/views/paginaDeCheckoutPagamento.html") //buscando arquivo paginaDeProduto.html na pasta views
+app.get('/checkoutpagamento', (req, res)=> { // quando acessar o locahost:3000/paginaDeProduto
+  res.sendFile(__dirname + "/views/checkoutPagamento.html") //buscando arquivo paginaDeProduto.html na pasta views
 })
 
 app.get('/login', (req, res)=> { // quando acessar o locahost:3000/paginaDeProduto
   res.sendFile(__dirname + "/views/login.html") //buscando arquivo paginaDeProduto.html na pasta views
 })
 
-app.get('/paginaDeFinalizacaoDeCompra', (req, res)=> { // quando acessar o locahost:3000/paginaDeProduto
-  res.sendFile(__dirname + "/views/paginaDeFinalizacaoDeCompra.html") //buscando arquivo paginaDeProduto.html na pasta views
+app.get('/finalizacaodecompra', (req, res)=> { // quando acessar o locahost:3000/paginaDeProduto
+  res.sendFile(__dirname + "/views/finalizacaoDeCompra.html") //buscando arquivo paginaDeProduto.html na pasta views
 })
 
-app.get('/paginaPainelDoUsuario', (req, res)=> { // quando acessar o locahost:3000/paginaDeProduto
-  res.sendFile(__dirname + "/views/paginaPainelDoUsuario.html") //buscando arquivo paginaDeProduto.html na pasta views
+app.get('/painelusuario', (req, res)=> { // quando acessar o locahost:3000/paginaDeProduto
+  res.sendFile(__dirname + "/views/painelUsuario.html") //buscando arquivo paginaDeProduto.html na pasta views
 })
 
 app.listen(3000,()=>{
