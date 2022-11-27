@@ -17,7 +17,22 @@ main .banner {
   }
  main .banner img {
     width: 100%;
- } 
+ }
+
+ main .tarja {
+    background-image: url("img/banner.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+  
+  }
+  main .tarja img {
+    width: 100%;
+  } 
 
 .banner-text {
     text-align: center;
@@ -61,6 +76,26 @@ main .banner-text {
 
 }
 
+.producto-cards {
+    display: flex;
+    align-items:flex-start;
+    justify-content:right;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.producto-card img {
+    max-width: 50%;
+        
+}
+
+.producto-card h3 {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+
+}
+
 @media screen and (max-width:700px) {   
     .mais-vendidos h2 {
         font-size: 2rem;
@@ -72,31 +107,12 @@ main .banner-text {
 }
 
 main .minibanner {
-    background-image: url("/img/minibanner1.png");
-    /* background-size: cover; */
-    background-position: center;
-    width: 50%;
-    padding-bottom: 20px;
-    display: flex; 
+    display: flex;
+    align-items: center;
     justify-content: center;
-    /* flex-direction: column; */
-  
-  }
- main .minibanner img {
+    gap: 10px;
+    margin-bottom: 50px;
+}
+main .minibanner img {
     max-width: 50%;
- } 
-
- main .minibanner2 {
-    background-image: url("/img/minibanner2.png");
-    /* background-size: cover; */
-    background-position: center;
-    width: 50%;
-    padding-bottom: 20px;
-    display: flex; 
-    justify-content: center;
-    /* flex-direction: column; */
-  
-  }
- main .minibanner2 img {
-    max-width: 50%;
- } 
+}
