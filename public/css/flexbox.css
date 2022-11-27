@@ -51,12 +51,13 @@ main .banner-text {
 
 .product-card img {
     max-width: 100%;
-    
+        
 }
 
 .product-card h3 {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
 }
 
@@ -69,3 +70,33 @@ main .banner-text {
         flex-wrap: wrap;
     }
 }
+
+main .minibanner {
+    background-image: url("/img/minibanner1.png");
+    /* background-size: cover; */
+    background-position: center;
+    width: 50%;
+    padding-bottom: 20px;
+    display: flex; 
+    justify-content: center;
+    /* flex-direction: column; */
+  
+  }
+ main .minibanner img {
+    max-width: 50%;
+ } 
+
+ main .minibanner2 {
+    background-image: url("/img/minibanner2.png");
+    /* background-size: cover; */
+    background-position: center;
+    width: 50%;
+    padding-bottom: 20px;
+    display: flex; 
+    justify-content: center;
+    /* flex-direction: column; */
+  
+  }
+ main .minibanner2 img {
+    max-width: 50%;
+ } 
