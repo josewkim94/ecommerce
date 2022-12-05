@@ -11,9 +11,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="img/florenza1.png">
+  <script >
+    
+    function getTextResponse(response){
+      console.log("rodando getTextResponse")
+      response.text().then(setDivContent);
+    }
+    
+    function setDivContent(data){
+      console.log("rodando setDivContent")
+      const div = document.getElementById('content');
+      div.innerHTML = data;
+    };
+   
+    console.log('fazendo requisiçao')
+    fetch('/home').then(getTextResponse)
+  
+    console.log("requisicao feita")
+    
+
+  </script>
 </head>
 <body>
-
+  
 
   <header>
     <div class="logo-container">
@@ -44,8 +64,10 @@
     </div>
    
   </header>
-  <main style="height:120vh ;"
-  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate at voluptatem tempora dolorem velit eveniet, mollitia ullam odit in id officiis doloribus numquam cum suscipit ea ipsam porro quae commodi!</main>
+  <main>
+    <div id="content"></div>
+  </main>
+
   <footer>
     <div class="copyright">
       <p>Copyright &copy; 2022</p>
