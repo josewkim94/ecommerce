@@ -5,20 +5,63 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ecommerce</title>
+  <link rel="stylesheet" href="css/flexbox.css">
+  
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-  ISSO É UMA PÁGINA DE CARRINHO
+  <!-- ISSO É UMA PÁGINA DE CARRINHO -->
 
   <header>
-    <img src="img/logoooo.png" alt="logo">
+    <div class="logo-container">
+      <img src="img/florenza1.png" alt="logo">
+    </div>
+    
     <div class="menu">
-      <a href="#">categorias</a>
-      <a href="#">exemplo</a>
-     
+      <div class="container-superior">
+        <div class="search-wrapper">
+          <input type="text" placeholder="O que você procura">
+          <button>Buscar</button>
+
+        </div>
+        <div class="container-superior-btngroup">
+          <button><img src="img/carrinho.png" alt=""></button>
+          <a href="#">Login</a>
+        </div>
+      </div>
+      <div class="container-inferior">
+        <nav class="container-inferior-nav">
+          <a href="#">Camisetas</a>
+          <a href="#">Calças</a>
+          <a href="#">Moda íntima </a>
+         
+        </nav>
+      </div>
 
     </div>
-    <input type="text"/>
+   
   </header>
+
+    
+    <main class="cart-main">
+      <h1>Produtos no carrinho </h1>
+      
+        <ul>
+          <li>
+            <img src="img/roupa1.jpg" alt="">
+            
+            <div class="item-cart">
+              <h3>Roupa 1</h3>
+
+            </div>
+  
+          </li>
+
+        </ul>
+      
+      
+    </main>
+  
 </body>
 </html>

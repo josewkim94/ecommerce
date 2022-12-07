@@ -63,20 +63,44 @@ main .banner-text {
     gap: 10px;
     margin-bottom: 50px;
 }
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e1ddda;
+    border-radius: 10px;
+}
 
 .product-card img {
     max-width: 100%;
-        
+    border-radius: 10px;
 }
 
 .product-card h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 15px auto 5px auto;
 
 }
-
-.producto-cards {
+.product-card button {
+    border: none;
+    padding: 15px;
+    background-color: #3fa9f5;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s all ease;
+    margin-bottom: 15px;
+    
+}
+.product-card button:hover {
+    background-color: #3fa9f5c2;
+}
+.product-cards {
     display: flex;
     align-items:flex-start;
     justify-content:right;
@@ -84,16 +108,19 @@ main .banner-text {
     margin-bottom: 50px;
 }
 
-.producto-card img {
-    max-width: 50%;
+.product-card img {
+    max-width: 100%;
         
 }
-
-.producto-card h3 {
+.product-card p {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+.product-card h3 {
     display: flex;
     /* flex-direction: column; */
     align-items: center;
-
+    font-size: 1.5rem;
 }
 
 @media screen and (max-width:700px) {   
@@ -115,4 +142,37 @@ main .minibanner {
 }
 main .minibanner img {
     max-width: 50%;
+}
+/* Pagina de carrinho */
+
+.cart-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cart-main ul {
+    display: flex;
+    align-items: center;
+    
+    list-style: none;
+    flex-direction: column;
+    background-color: #eee;
+    width: 100%;
+    margin-top: 20px;
+}
+.cart-main li {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 40px;
+
+}
+.cart-main li img {
+    width: 100px;
 }
